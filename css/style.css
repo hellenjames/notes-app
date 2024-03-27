@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --primary-color: #f5f5dc;
+  --secondary-color: #f3e5ab;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+body {
+  background-color: #f5f5dc;
+}
+.new__note {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color:  #f3e5ab;
+}
+.note i{
+    /* color:red; */
+}
