@@ -13,18 +13,60 @@
   width: 80%;
 }
 body {
-  background-color: #f5f5dc;
+  background-color: var(--primary-color);
 }
-.new__note {
+.notes__container {
+  display: flex;
+  gap: 2em;
+}
+.note textarea {
   width: 200px;
   height: 200px;
+  resize:none;
+  background-color: transparent;
+  padding: 1em;
+}
+
+.note__card {
+  width: 200px;
+  height: 2oopx;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  
+}
+
+.new__note {
+  /* width: 200px;
+  height: 200px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 5px;
-  background-color:  #f3e5ab;
+  /* border-radius: 5px; */
+  /* background-color: var(--secondary-color); */
+  cursor: pointer;
+}
+.new__note:hover {
+  border: 2px dashed var(--secondary-color);
+  background-color: var(--primary-color);
+  transform: translateY(-5px);
+  transition: all 0.5s ease;
+}
+.new__note span:first-child {
+  font-size: 2rem;
+}
+.note{
+    position:relative
 }
 .note i{
-    /* color:red; */
+    color: red;
+    position:absolute;
+right:1rem;
+bottom:1rem;
+    display:none;
+    cursor: pointer; 
+}
+.note:hover i{
+     display: block;    
+    
 }
